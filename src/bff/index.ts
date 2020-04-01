@@ -5,12 +5,11 @@ export function handler(
   _event: APIGatewayProxyEvent,
   context: Context
 ): Promise<APIGatewayProxyResult> {
-  // fetch from Google Doc
+  // fetch location data from e.g. GoogleSheet
 
-  // convert addresses into geo locations
+  // convert addresses into geo locations e.g. geocod.io
 
   // return well prepped data to client
-
   const data: LocationData = {
     locations: [
       {

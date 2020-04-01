@@ -48,8 +48,6 @@ exports.default = {
         publicPath: '/assets',
         localPath: 'dist/app',
         responseHeaders: {
-          // Since the assets have a fingerprint, they can be cached permanently
-          // in the browser.
           cacheControl: cacheControl
         }
       }

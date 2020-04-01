@@ -1,9 +1,9 @@
-interface Position {
+export interface Position {
   readonly latitude: number;
   readonly longitude: number;
 }
 
-interface Location {
+export interface Location {
   readonly name: string;
   readonly address: string;
   readonly position: Position;

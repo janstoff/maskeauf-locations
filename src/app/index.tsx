@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {useLocationData} from './useLocationData';
+import {useLocationData} from './use-location-data';
+import {MaskFinder} from './mask-finder';
 
 function App(): JSX.Element | null {
   const data = useLocationData();
@@ -9,7 +10,7 @@ function App(): JSX.Element | null {
     return null;
   }
 
-  return <h1>{JSON.stringify(data)}</h1>;
+  return <MaskFinder data={data} />;
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
